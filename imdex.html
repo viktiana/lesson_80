@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background: #02090c;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .featured-card,
+        .martian-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 22px;
+            background-size: cover;
+            background-position: center;
+            isolation: isolate;
+        }
+
+        .featured-card {
+            width: 662px;
+            height: 600px;
+            padding: 35px 30px;
+            background-image: url("./img/featured_movies.webp");
+        }
+
+        .featured-title {
+            margin: 0;
+            font-size: 23px;
+        }
+
+        .arrows {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            right: 12px;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .arrow {
+            width: 38px;
+            height: 38px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrow:hover {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+        .movie-info {
+            position: absolute;
+            left: 30px;
+            right: 30px;
+            bottom: 55px;
+        }
+
+        .movie-name {
+            margin: 0 0 5px;
+
+            font-size: 27px;
+            font-weight: 700;
+        }
+
+        .movie-meta {
+            margin: 0 0 10px;
+
+            color: #777;
+            font-size: 16px;
+        }
+
+        .rating {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 18px;
+        }
+
+        .star {
+            color: #ffe000;
+            font-size: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 10px 17px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .stream-btn {
+            border: none;
+            background: #00f0ff;
+            color: black;
+        }
+
+        .episodes-btn {
+            border: 1px solid white;
+
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+
+        .martian-card {
+            width: 492px;
+            height: 190px;
+            padding: 20px;
+            background-image: url("./img/martian.webp");
+        }
+
+        .martian-card .movie-name {
+            font-size: 18px;
+        }
+
+        .martian-card .movie-info {
+            left: 15px;
+            right: 15px;
+            bottom: 18px;
+        }
+
+        .martian-card .movie-meta {
+            font-size: 10px;
+        }
+
+        .martian-card .stream-btn {
+            padding: 6px 12px;
+            font-size: 10px;
+        }
+
+        .new-realease {
+            position: absolute;
+            top: 20px;
+            left: 15px;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .score {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+        <div class="featured-card">
+
+            <h3 class="featured-title">
+                Featured Movies/Series
+            </h3>
+
+            <div class="arrows">
+                <button class="arrow">
+                    ←
+                </button>
+
+                <button class="arrow">
+                    →
+                </button>
+            </div>
+
+            <div class="movie-info">
+
+                <h2 class="movie-name">
+                    Ready Player One
+                </h2>
+
+                <p class="movie-meta">
+                    Action - Drama - Sci-Fi
+                </p>
+
+
+                <div class="rating">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+
+
+                <div class="buttons">
+
+                    <button class="btn stream-btn">
+                        Stream Now ▶
+                    </button>
+
+                    <button class="btn episodes-btn">
+                        All Episodes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="martian-card">
+
+            <span class="new-release">
+                New Releases
+            </span>
+
+            <span class="score">
+                ⭐(4.9)
+            </span>
+
+
+            <div class="movie-info">
+
+                <h2 class="movie-name">
+                    Martian
+                </h2>
+
+                <p class="movie-meta">
+                    Action - Adventure - Sci-Fi
+                </p>
+
+                <button class="btn stream-btn">
+                    Stream Now ▶
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
